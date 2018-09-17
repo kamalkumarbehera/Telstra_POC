@@ -7,24 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00D4D2D9214B814F000814D4 /* NetworkServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D4D2D8214B814F000814D4 /* NetworkServices.swift */; };
+		04316418FA1F54B3CE08DE13 /* Pods_TableView_Download_Image_GCD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69AC3D9A389534A1F48974EE /* Pods_TableView_Download_Image_GCD.framework */; };
 		E39ECE8F2147A04F00AC6608 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39ECE8E2147A04F00AC6608 /* AppDelegate.swift */; };
 		E39ECE912147A04F00AC6608 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39ECE902147A04F00AC6608 /* ViewController.swift */; };
 		E39ECE942147A04F00AC6608 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E39ECE922147A04F00AC6608 /* Main.storyboard */; };
 		E39ECE962147A05200AC6608 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E39ECE952147A05200AC6608 /* Assets.xcassets */; };
 		E39ECE992147A05200AC6608 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E39ECE972147A05200AC6608 /* LaunchScreen.storyboard */; };
-		E39ECEA42147A05200AC6608 /* TableView_Download_Image_GCDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39ECEA32147A05200AC6608 /* TableView_Download_Image_GCDTests.swift */; };
-		E39ECEAF2147A05200AC6608 /* TableView_Download_Image_GCDUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39ECEAE2147A05200AC6608 /* TableView_Download_Image_GCDUITests.swift */; };
+		E39ECEBD2147BBCA00AC6608 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39ECEBC2147BBCA00AC6608 /* DataModel.swift */; };
+		E39ECEC32147CF1300AC6608 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39ECEC22147CF1300AC6608 /* CustomTableViewCell.swift */; };
+		E3DDF87D214EB86D009D0929 /* TableView_Download_Image_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DDF87C214EB86D009D0929 /* TableView_Download_Image_Tests.swift */; };
+		E3DDF8C3214EEB0A009D0929 /* NetworkServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DDF8C2214EEB0A009D0929 /* NetworkServices.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E39ECEA02147A05200AC6608 /* PBXContainerItemProxy */ = {
+		E3DDF87F214EB86D009D0929 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E39ECE832147A04F00AC6608 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = E39ECE8A2147A04F00AC6608;
 			remoteInfo = TableView_Download_Image_GCD;
 		};
-		E39ECEAB2147A05200AC6608 /* PBXContainerItemProxy */ = {
+		E3DDF8C5214EEB0A009D0929 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E39ECE832147A04F00AC6608 /* Project object */;
 			proxyType = 1;
@@ -34,6 +38,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00BBDA5A214B84DB002F1B00 /* TableView_Download_Image_GCD-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TableView_Download_Image_GCD-Bridging-Header.h"; sourceTree = "<group>"; };
+		00D4D2D8214B814F000814D4 /* NetworkServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServices.swift; sourceTree = "<group>"; };
+		05D4E9CA5DE61D860A2F4B66 /* Pods-TableView_Download_Image_GCD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TableView_Download_Image_GCD.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TableView_Download_Image_GCD/Pods-TableView_Download_Image_GCD.debug.xcconfig"; sourceTree = "<group>"; };
+		0A459ECEA2579A009DF7DA5F /* Pods-TableView_Download_Image_GCD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TableView_Download_Image_GCD.release.xcconfig"; path = "Pods/Target Support Files/Pods-TableView_Download_Image_GCD/Pods-TableView_Download_Image_GCD.release.xcconfig"; sourceTree = "<group>"; };
+		0AEC7498BBAA9CB2694B0827 /* Pods-TableView_Download_Image_GCDUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TableView_Download_Image_GCDUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TableView_Download_Image_GCDUITests/Pods-TableView_Download_Image_GCDUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		69AC3D9A389534A1F48974EE /* Pods_TableView_Download_Image_GCD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TableView_Download_Image_GCD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		72B48B173B9C0EEC92BABC34 /* Pods-TableView_Download_Image_GCDUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TableView_Download_Image_GCDUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TableView_Download_Image_GCDUITests/Pods-TableView_Download_Image_GCDUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D70890D804E7FFE347A90DE5 /* Pods_TableView_Download_Image_GCDUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TableView_Download_Image_GCDUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E39ECE8B2147A04F00AC6608 /* TableView_Download_Image_GCD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableView_Download_Image_GCD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E39ECE8E2147A04F00AC6608 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E39ECE902147A04F00AC6608 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -41,12 +53,14 @@
 		E39ECE952147A05200AC6608 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E39ECE982147A05200AC6608 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E39ECE9A2147A05200AC6608 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E39ECE9F2147A05200AC6608 /* TableView_Download_Image_GCDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableView_Download_Image_GCDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E39ECEA32147A05200AC6608 /* TableView_Download_Image_GCDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView_Download_Image_GCDTests.swift; sourceTree = "<group>"; };
-		E39ECEA52147A05200AC6608 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E39ECEAA2147A05200AC6608 /* TableView_Download_Image_GCDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableView_Download_Image_GCDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E39ECEAE2147A05200AC6608 /* TableView_Download_Image_GCDUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView_Download_Image_GCDUITests.swift; sourceTree = "<group>"; };
-		E39ECEB02147A05200AC6608 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E39ECEBC2147BBCA00AC6608 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		E39ECEC22147CF1300AC6608 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		E3DDF87A214EB86D009D0929 /* TableView_Download_Image_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableView_Download_Image_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3DDF87C214EB86D009D0929 /* TableView_Download_Image_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView_Download_Image_Tests.swift; sourceTree = "<group>"; };
+		E3DDF87E214EB86D009D0929 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3DDF8C0214EEB0A009D0929 /* NetworkServices.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkServices.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3DDF8C2214EEB0A009D0929 /* NetworkServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServices.swift; sourceTree = "<group>"; };
+		E3DDF8C4214EEB0A009D0929 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,17 +68,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04316418FA1F54B3CE08DE13 /* Pods_TableView_Download_Image_GCD.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E39ECE9C2147A05200AC6608 /* Frameworks */ = {
+		E3DDF877214EB86D009D0929 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E39ECEA72147A05200AC6608 /* Frameworks */ = {
+		E3DDF8BD214EEB0A009D0929 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -74,13 +89,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5955574098EC3B48376925A9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				05D4E9CA5DE61D860A2F4B66 /* Pods-TableView_Download_Image_GCD.debug.xcconfig */,
+				0A459ECEA2579A009DF7DA5F /* Pods-TableView_Download_Image_GCD.release.xcconfig */,
+				0AEC7498BBAA9CB2694B0827 /* Pods-TableView_Download_Image_GCDUITests.debug.xcconfig */,
+				72B48B173B9C0EEC92BABC34 /* Pods-TableView_Download_Image_GCDUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BBFA7F9600294ABDAA43268B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				69AC3D9A389534A1F48974EE /* Pods_TableView_Download_Image_GCD.framework */,
+				D70890D804E7FFE347A90DE5 /* Pods_TableView_Download_Image_GCDUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E39ECE822147A04F00AC6608 = {
 			isa = PBXGroup;
 			children = (
 				E39ECE8D2147A04F00AC6608 /* TableView_Download_Image_GCD */,
-				E39ECEA22147A05200AC6608 /* TableView_Download_Image_GCDTests */,
-				E39ECEAD2147A05200AC6608 /* TableView_Download_Image_GCDUITests */,
+				E3DDF87B214EB86D009D0929 /* TableView_Download_Image_Tests */,
+				E3DDF8C1214EEB0A009D0929 /* NetworkServices */,
 				E39ECE8C2147A04F00AC6608 /* Products */,
+				5955574098EC3B48376925A9 /* Pods */,
+				BBFA7F9600294ABDAA43268B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,8 +125,8 @@
 			isa = PBXGroup;
 			children = (
 				E39ECE8B2147A04F00AC6608 /* TableView_Download_Image_GCD.app */,
-				E39ECE9F2147A05200AC6608 /* TableView_Download_Image_GCDTests.xctest */,
-				E39ECEAA2147A05200AC6608 /* TableView_Download_Image_GCDUITests.xctest */,
+				E3DDF87A214EB86D009D0929 /* TableView_Download_Image_Tests.xctest */,
+				E3DDF8C0214EEB0A009D0929 /* NetworkServices.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,32 +134,60 @@
 		E39ECE8D2147A04F00AC6608 /* TableView_Download_Image_GCD */ = {
 			isa = PBXGroup;
 			children = (
+				E3DDF8BB214EDB32009D0929 /* Controller */,
+				E3DDF8BA214EDAFE009D0929 /* View */,
+				E3DDF8B9214EDAE3009D0929 /* Model */,
 				E39ECE8E2147A04F00AC6608 /* AppDelegate.swift */,
-				E39ECE902147A04F00AC6608 /* ViewController.swift */,
 				E39ECE922147A04F00AC6608 /* Main.storyboard */,
 				E39ECE952147A05200AC6608 /* Assets.xcassets */,
 				E39ECE972147A05200AC6608 /* LaunchScreen.storyboard */,
 				E39ECE9A2147A05200AC6608 /* Info.plist */,
+				00BBDA5A214B84DB002F1B00 /* TableView_Download_Image_GCD-Bridging-Header.h */,
 			);
 			path = TableView_Download_Image_GCD;
 			sourceTree = "<group>";
 		};
-		E39ECEA22147A05200AC6608 /* TableView_Download_Image_GCDTests */ = {
+		E3DDF87B214EB86D009D0929 /* TableView_Download_Image_Tests */ = {
 			isa = PBXGroup;
 			children = (
-				E39ECEA32147A05200AC6608 /* TableView_Download_Image_GCDTests.swift */,
-				E39ECEA52147A05200AC6608 /* Info.plist */,
+				E3DDF87C214EB86D009D0929 /* TableView_Download_Image_Tests.swift */,
+				E3DDF87E214EB86D009D0929 /* Info.plist */,
 			);
-			path = TableView_Download_Image_GCDTests;
+			path = TableView_Download_Image_Tests;
 			sourceTree = "<group>";
 		};
-		E39ECEAD2147A05200AC6608 /* TableView_Download_Image_GCDUITests */ = {
+		E3DDF8B9214EDAE3009D0929 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				E39ECEAE2147A05200AC6608 /* TableView_Download_Image_GCDUITests.swift */,
-				E39ECEB02147A05200AC6608 /* Info.plist */,
+				E39ECEBC2147BBCA00AC6608 /* DataModel.swift */,
 			);
-			path = TableView_Download_Image_GCDUITests;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E3DDF8BA214EDAFE009D0929 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E39ECEC22147CF1300AC6608 /* CustomTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E3DDF8BB214EDB32009D0929 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E39ECE902147A04F00AC6608 /* ViewController.swift */,
+				00D4D2D8214B814F000814D4 /* NetworkServices.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E3DDF8C1214EEB0A009D0929 /* NetworkServices */ = {
+			isa = PBXGroup;
+			children = (
+				E3DDF8C2214EEB0A009D0929 /* NetworkServices.swift */,
+				E3DDF8C4214EEB0A009D0929 /* Info.plist */,
+			);
+			path = NetworkServices;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,9 +197,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E39ECEB32147A05200AC6608 /* Build configuration list for PBXNativeTarget "TableView_Download_Image_GCD" */;
 			buildPhases = (
+				70EA0FD0A8BC84FE4482F226 /* [CP] Check Pods Manifest.lock */,
 				E39ECE872147A04F00AC6608 /* Sources */,
 				E39ECE882147A04F00AC6608 /* Frameworks */,
 				E39ECE892147A04F00AC6608 /* Resources */,
+				2C3612432B7F303AD9F9E2E2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -145,41 +212,41 @@
 			productReference = E39ECE8B2147A04F00AC6608 /* TableView_Download_Image_GCD.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E39ECE9E2147A05200AC6608 /* TableView_Download_Image_GCDTests */ = {
+		E3DDF879214EB86D009D0929 /* TableView_Download_Image_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E39ECEB62147A05200AC6608 /* Build configuration list for PBXNativeTarget "TableView_Download_Image_GCDTests" */;
+			buildConfigurationList = E3DDF881214EB86D009D0929 /* Build configuration list for PBXNativeTarget "TableView_Download_Image_Tests" */;
 			buildPhases = (
-				E39ECE9B2147A05200AC6608 /* Sources */,
-				E39ECE9C2147A05200AC6608 /* Frameworks */,
-				E39ECE9D2147A05200AC6608 /* Resources */,
+				E3DDF876214EB86D009D0929 /* Sources */,
+				E3DDF877214EB86D009D0929 /* Frameworks */,
+				E3DDF878214EB86D009D0929 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				E39ECEA12147A05200AC6608 /* PBXTargetDependency */,
+				E3DDF880214EB86D009D0929 /* PBXTargetDependency */,
 			);
-			name = TableView_Download_Image_GCDTests;
-			productName = TableView_Download_Image_GCDTests;
-			productReference = E39ECE9F2147A05200AC6608 /* TableView_Download_Image_GCDTests.xctest */;
+			name = TableView_Download_Image_Tests;
+			productName = TableView_Download_Image_Tests;
+			productReference = E3DDF87A214EB86D009D0929 /* TableView_Download_Image_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		E39ECEA92147A05200AC6608 /* TableView_Download_Image_GCDUITests */ = {
+		E3DDF8BF214EEB0A009D0929 /* NetworkServices */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E39ECEB92147A05200AC6608 /* Build configuration list for PBXNativeTarget "TableView_Download_Image_GCDUITests" */;
+			buildConfigurationList = E3DDF8C7214EEB0A009D0929 /* Build configuration list for PBXNativeTarget "NetworkServices" */;
 			buildPhases = (
-				E39ECEA62147A05200AC6608 /* Sources */,
-				E39ECEA72147A05200AC6608 /* Frameworks */,
-				E39ECEA82147A05200AC6608 /* Resources */,
+				E3DDF8BC214EEB0A009D0929 /* Sources */,
+				E3DDF8BD214EEB0A009D0929 /* Frameworks */,
+				E3DDF8BE214EEB0A009D0929 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				E39ECEAC2147A05200AC6608 /* PBXTargetDependency */,
+				E3DDF8C6214EEB0A009D0929 /* PBXTargetDependency */,
 			);
-			name = TableView_Download_Image_GCDUITests;
-			productName = TableView_Download_Image_GCDUITests;
-			productReference = E39ECEAA2147A05200AC6608 /* TableView_Download_Image_GCDUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
+			name = NetworkServices;
+			productName = NetworkServices;
+			productReference = E3DDF8C0214EEB0A009D0929 /* NetworkServices.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -194,11 +261,11 @@
 					E39ECE8A2147A04F00AC6608 = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
-					E39ECE9E2147A05200AC6608 = {
+					E3DDF879214EB86D009D0929 = {
 						CreatedOnToolsVersion = 9.4.1;
 						TestTargetID = E39ECE8A2147A04F00AC6608;
 					};
-					E39ECEA92147A05200AC6608 = {
+					E3DDF8BF214EEB0A009D0929 = {
 						CreatedOnToolsVersion = 9.4.1;
 						TestTargetID = E39ECE8A2147A04F00AC6608;
 					};
@@ -218,8 +285,8 @@
 			projectRoot = "";
 			targets = (
 				E39ECE8A2147A04F00AC6608 /* TableView_Download_Image_GCD */,
-				E39ECE9E2147A05200AC6608 /* TableView_Download_Image_GCDTests */,
-				E39ECEA92147A05200AC6608 /* TableView_Download_Image_GCDUITests */,
+				E3DDF879214EB86D009D0929 /* TableView_Download_Image_Tests */,
+				E3DDF8BF214EEB0A009D0929 /* NetworkServices */,
 			);
 		};
 /* End PBXProject section */
@@ -235,14 +302,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E39ECE9D2147A05200AC6608 /* Resources */ = {
+		E3DDF878214EB86D009D0929 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E39ECEA82147A05200AC6608 /* Resources */ = {
+		E3DDF8BE214EEB0A009D0929 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -251,44 +318,88 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2C3612432B7F303AD9F9E2E2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TableView_Download_Image_GCD/Pods-TableView_Download_Image_GCD-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TableView_Download_Image_GCD/Pods-TableView_Download_Image_GCD-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		70EA0FD0A8BC84FE4482F226 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TableView_Download_Image_GCD-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E39ECE872147A04F00AC6608 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00D4D2D9214B814F000814D4 /* NetworkServices.swift in Sources */,
+				E39ECEBD2147BBCA00AC6608 /* DataModel.swift in Sources */,
+				E39ECEC32147CF1300AC6608 /* CustomTableViewCell.swift in Sources */,
 				E39ECE912147A04F00AC6608 /* ViewController.swift in Sources */,
 				E39ECE8F2147A04F00AC6608 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E39ECE9B2147A05200AC6608 /* Sources */ = {
+		E3DDF876214EB86D009D0929 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E39ECEA42147A05200AC6608 /* TableView_Download_Image_GCDTests.swift in Sources */,
+				E3DDF87D214EB86D009D0929 /* TableView_Download_Image_Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E39ECEA62147A05200AC6608 /* Sources */ = {
+		E3DDF8BC214EEB0A009D0929 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E39ECEAF2147A05200AC6608 /* TableView_Download_Image_GCDUITests.swift in Sources */,
+				E3DDF8C3214EEB0A009D0929 /* NetworkServices.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		E39ECEA12147A05200AC6608 /* PBXTargetDependency */ = {
+		E3DDF880214EB86D009D0929 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = E39ECE8A2147A04F00AC6608 /* TableView_Download_Image_GCD */;
-			targetProxy = E39ECEA02147A05200AC6608 /* PBXContainerItemProxy */;
+			targetProxy = E3DDF87F214EB86D009D0929 /* PBXContainerItemProxy */;
 		};
-		E39ECEAC2147A05200AC6608 /* PBXTargetDependency */ = {
+		E3DDF8C6214EEB0A009D0929 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = E39ECE8A2147A04F00AC6608 /* TableView_Download_Image_GCD */;
-			targetProxy = E39ECEAB2147A05200AC6608 /* PBXContainerItemProxy */;
+			targetProxy = E3DDF8C5214EEB0A009D0929 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -428,6 +539,7 @@
 		};
 		E39ECEB42147A05200AC6608 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05D4E9CA5DE61D860A2F4B66 /* Pods-TableView_Download_Image_GCD.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -437,8 +549,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "KAMAL.TableView-Download-Image-GCD";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/TableView_Download_Image_GCD/TableView_Download_Image_GCD-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -446,6 +560,7 @@
 		};
 		E39ECEB52147A05200AC6608 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A459ECEA2579A009DF7DA5F /* Pods-TableView_Download_Image_GCD.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -455,27 +570,28 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "KAMAL.TableView-Download-Image-GCD";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/TableView_Download_Image_GCD/TableView_Download_Image_GCD-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		E39ECEB72147A05200AC6608 /* Debug */ = {
+		E3DDF882214EB86D009D0929 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KBMS999ZL9;
-				INFOPLIST_FILE = TableView_Download_Image_GCDTests/Info.plist;
+				INFOPLIST_FILE = TableView_Download_Image_Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "KAMAL.TableView-Download-Image-GCDTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "KAMAL.TableView-Download-Image-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -483,20 +599,19 @@
 			};
 			name = Debug;
 		};
-		E39ECEB82147A05200AC6608 /* Release */ = {
+		E3DDF883214EB86D009D0929 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KBMS999ZL9;
-				INFOPLIST_FILE = TableView_Download_Image_GCDTests/Info.plist;
+				INFOPLIST_FILE = TableView_Download_Image_Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "KAMAL.TableView-Download-Image-GCDTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "KAMAL.TableView-Download-Image-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -504,43 +619,43 @@
 			};
 			name = Release;
 		};
-		E39ECEBA2147A05200AC6608 /* Debug */ = {
+		E3DDF8C8214EEB0A009D0929 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KBMS999ZL9;
-				INFOPLIST_FILE = TableView_Download_Image_GCDUITests/Info.plist;
+				INFOPLIST_FILE = NetworkServices/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "KAMAL.TableView-Download-Image-GCDUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = KAMAL.NetworkServices;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TableView_Download_Image_GCD;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TableView_Download_Image_GCD.app/TableView_Download_Image_GCD";
 			};
 			name = Debug;
 		};
-		E39ECEBB2147A05200AC6608 /* Release */ = {
+		E3DDF8C9214EEB0A009D0929 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KBMS999ZL9;
-				INFOPLIST_FILE = TableView_Download_Image_GCDUITests/Info.plist;
+				INFOPLIST_FILE = NetworkServices/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "KAMAL.TableView-Download-Image-GCDUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = KAMAL.NetworkServices;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TableView_Download_Image_GCD;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TableView_Download_Image_GCD.app/TableView_Download_Image_GCD";
 			};
 			name = Release;
 		};
@@ -565,20 +680,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E39ECEB62147A05200AC6608 /* Build configuration list for PBXNativeTarget "TableView_Download_Image_GCDTests" */ = {
+		E3DDF881214EB86D009D0929 /* Build configuration list for PBXNativeTarget "TableView_Download_Image_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E39ECEB72147A05200AC6608 /* Debug */,
-				E39ECEB82147A05200AC6608 /* Release */,
+				E3DDF882214EB86D009D0929 /* Debug */,
+				E3DDF883214EB86D009D0929 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E39ECEB92147A05200AC6608 /* Build configuration list for PBXNativeTarget "TableView_Download_Image_GCDUITests" */ = {
+		E3DDF8C7214EEB0A009D0929 /* Build configuration list for PBXNativeTarget "NetworkServices" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E39ECEBA2147A05200AC6608 /* Debug */,
-				E39ECEBB2147A05200AC6608 /* Release */,
+				E3DDF8C8214EEB0A009D0929 /* Debug */,
+				E3DDF8C9214EEB0A009D0929 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

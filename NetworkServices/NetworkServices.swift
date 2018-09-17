@@ -1,15 +1,14 @@
 //
-//  TableView_Download_Image_GCDTests.swift
-//  TableView_Download_Image_GCDTests
+//  NetworkServices.swift
+//  NetworkServices
 //
-//  Created by KAMAL KUMAR BEHERA on 11/09/18.
+//  Created by KAMAL KUMAR BEHERA on 17/09/18.
 //  Copyright © 2018 KAMAL KUMAR BEHERA. All rights reserved.
 //
 
 import XCTest
-@testable import TableView_Download_Image_GCD
 
-class TableView_Download_Image_GCDTests: XCTestCase {
+class NetworkServices: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -24,6 +23,7 @@ class TableView_Download_Image_GCDTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
     }
     
     func testPerformanceExample() {
@@ -32,5 +32,7 @@ class TableView_Download_Image_GCDTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+    
+    
     
 }
