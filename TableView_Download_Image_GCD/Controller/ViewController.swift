@@ -45,23 +45,23 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     func getAllJsonData(){
         
         NetworkServices.loadNetworkData { (arrayObjectes,title) in
-            
-            self.contacts = arrayObjectes
-            self.tableViewTitle = title
+            weak var weakSelf = self
+            weakSelf.contacts = arrayObjectes
+            weakSelf.tableViewTitle = title
             DispatchQueue.main.async {
                 
-                self.tableView.reloadData()
+                weakSelf.tableView.reloadData()
             }
         }
     }
     
     //Pull-to-refresh to a tableview..
     @objc func refreshTabeview(){
-        
+        weak var weakSelf = self
         self.getAllJsonData()
         DispatchQueue.main.async(execute: { () -> Void in
             
-            self.tableView.refreshControl?.endRefreshing()
+            weakSelf.tableView.refreshControl?.endRefreshing()
         })
     }
     

@@ -17,18 +17,10 @@
 		E39ECEBD2147BBCA00AC6608 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39ECEBC2147BBCA00AC6608 /* DataModel.swift */; };
 		E39ECEC32147CF1300AC6608 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39ECEC22147CF1300AC6608 /* CustomTableViewCell.swift */; };
 		E3DDF87D214EB86D009D0929 /* TableView_Download_Image_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DDF87C214EB86D009D0929 /* TableView_Download_Image_Tests.swift */; };
-		E3DDF8C3214EEB0A009D0929 /* NetworkServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DDF8C2214EEB0A009D0929 /* NetworkServices.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		E3DDF87F214EB86D009D0929 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E39ECE832147A04F00AC6608 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E39ECE8A2147A04F00AC6608;
-			remoteInfo = TableView_Download_Image_GCD;
-		};
-		E3DDF8C5214EEB0A009D0929 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E39ECE832147A04F00AC6608 /* Project object */;
 			proxyType = 1;
@@ -58,9 +50,6 @@
 		E3DDF87A214EB86D009D0929 /* TableView_Download_Image_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableView_Download_Image_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3DDF87C214EB86D009D0929 /* TableView_Download_Image_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView_Download_Image_Tests.swift; sourceTree = "<group>"; };
 		E3DDF87E214EB86D009D0929 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E3DDF8C0214EEB0A009D0929 /* NetworkServices.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkServices.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E3DDF8C2214EEB0A009D0929 /* NetworkServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServices.swift; sourceTree = "<group>"; };
-		E3DDF8C4214EEB0A009D0929 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,13 +62,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		E3DDF877214EB86D009D0929 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E3DDF8BD214EEB0A009D0929 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -114,7 +96,6 @@
 			children = (
 				E39ECE8D2147A04F00AC6608 /* TableView_Download_Image_GCD */,
 				E3DDF87B214EB86D009D0929 /* TableView_Download_Image_Tests */,
-				E3DDF8C1214EEB0A009D0929 /* NetworkServices */,
 				E39ECE8C2147A04F00AC6608 /* Products */,
 				5955574098EC3B48376925A9 /* Pods */,
 				BBFA7F9600294ABDAA43268B /* Frameworks */,
@@ -126,7 +107,6 @@
 			children = (
 				E39ECE8B2147A04F00AC6608 /* TableView_Download_Image_GCD.app */,
 				E3DDF87A214EB86D009D0929 /* TableView_Download_Image_Tests.xctest */,
-				E3DDF8C0214EEB0A009D0929 /* NetworkServices.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -181,15 +161,6 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		E3DDF8C1214EEB0A009D0929 /* NetworkServices */ = {
-			isa = PBXGroup;
-			children = (
-				E3DDF8C2214EEB0A009D0929 /* NetworkServices.swift */,
-				E3DDF8C4214EEB0A009D0929 /* Info.plist */,
-			);
-			path = NetworkServices;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -230,24 +201,6 @@
 			productReference = E3DDF87A214EB86D009D0929 /* TableView_Download_Image_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		E3DDF8BF214EEB0A009D0929 /* NetworkServices */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E3DDF8C7214EEB0A009D0929 /* Build configuration list for PBXNativeTarget "NetworkServices" */;
-			buildPhases = (
-				E3DDF8BC214EEB0A009D0929 /* Sources */,
-				E3DDF8BD214EEB0A009D0929 /* Frameworks */,
-				E3DDF8BE214EEB0A009D0929 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E3DDF8C6214EEB0A009D0929 /* PBXTargetDependency */,
-			);
-			name = NetworkServices;
-			productName = NetworkServices;
-			productReference = E3DDF8C0214EEB0A009D0929 /* NetworkServices.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -262,10 +215,6 @@
 						CreatedOnToolsVersion = 9.4.1;
 					};
 					E3DDF879214EB86D009D0929 = {
-						CreatedOnToolsVersion = 9.4.1;
-						TestTargetID = E39ECE8A2147A04F00AC6608;
-					};
-					E3DDF8BF214EEB0A009D0929 = {
 						CreatedOnToolsVersion = 9.4.1;
 						TestTargetID = E39ECE8A2147A04F00AC6608;
 					};
@@ -286,7 +235,6 @@
 			targets = (
 				E39ECE8A2147A04F00AC6608 /* TableView_Download_Image_GCD */,
 				E3DDF879214EB86D009D0929 /* TableView_Download_Image_Tests */,
-				E3DDF8BF214EEB0A009D0929 /* NetworkServices */,
 			);
 		};
 /* End PBXProject section */
@@ -303,13 +251,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		E3DDF878214EB86D009D0929 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E3DDF8BE214EEB0A009D0929 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -380,14 +321,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E3DDF8BC214EEB0A009D0929 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E3DDF8C3214EEB0A009D0929 /* NetworkServices.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -395,11 +328,6 @@
 			isa = PBXTargetDependency;
 			target = E39ECE8A2147A04F00AC6608 /* TableView_Download_Image_GCD */;
 			targetProxy = E3DDF87F214EB86D009D0929 /* PBXContainerItemProxy */;
-		};
-		E3DDF8C6214EEB0A009D0929 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E39ECE8A2147A04F00AC6608 /* TableView_Download_Image_GCD */;
-			targetProxy = E3DDF8C5214EEB0A009D0929 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -619,46 +547,6 @@
 			};
 			name = Release;
 		};
-		E3DDF8C8214EEB0A009D0929 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KBMS999ZL9;
-				INFOPLIST_FILE = NetworkServices/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = KAMAL.NetworkServices;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TableView_Download_Image_GCD.app/TableView_Download_Image_GCD";
-			};
-			name = Debug;
-		};
-		E3DDF8C9214EEB0A009D0929 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KBMS999ZL9;
-				INFOPLIST_FILE = NetworkServices/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = KAMAL.NetworkServices;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TableView_Download_Image_GCD.app/TableView_Download_Image_GCD";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -685,15 +573,6 @@
 			buildConfigurations = (
 				E3DDF882214EB86D009D0929 /* Debug */,
 				E3DDF883214EB86D009D0929 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E3DDF8C7214EEB0A009D0929 /* Build configuration list for PBXNativeTarget "NetworkServices" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E3DDF8C8214EEB0A009D0929 /* Debug */,
-				E3DDF8C9214EEB0A009D0929 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -7,36 +7,52 @@
 //
 
 import XCTest
-
+@testable import TableView_Download_Image_GCD
 
 class TableView_Download_Image_Tests: XCTestCase {
     
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func testForViewControllerDelegateConfirmation(){
+        let viewController  = ViewController()
         
+        // Make Confirm for tableview delegate..
+        XCTAssert(viewController.conforms(to: UITableViewDelegate.self), "ViewController does not confirms TableView delegate")
     }
     
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
+    func testForViewControllerDatasourceConfirmation(){
+        let viewController  = ViewController()
+        
+        // Make Confirm for tableview DataSource..
+        XCTAssert(viewController.conforms(to: UITableViewDataSource.self), "ViewController does not confirms TableView datasource")
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testForInternetConnection() {
+        //Make sure internet coinnection is there ..
+        XCTAssert(NetworkServices.isConnectedToInternet(), "No Internet Connection")
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    func testDownloadWebData() {
+        
+        // Create an expectation for a background download task.
+        let expectation = XCTestExpectation(description: "Download tableview json data")
+        
+        // Create a URL for a web page to be downloaded.
+        let url = URL(string: "https://dl.dropboxusercontent.com/s/2iodh4vg0eortkl/facts.json")!
+        
+        // Create a background task to download the web page.
+        let dataTask = URLSession.shared.dataTask(with: url) { (data, _, _) in
+            
+            // Make sure we downloaded some data.
+            XCTAssertNotNil(data, "No data was downloaded.")
+            
+            // Fulfill the expectation to indicate that the background task has finished successfully.
+            expectation.fulfill()
+            
         }
-    }
-    
-    func  TestgetAllJsonData(){
+        // Start the download task.
+        dataTask.resume()
         
-        
+        // Wait until the expectation is fulfilled, with a timeout of 10 seconds.
+        wait(for: [expectation], timeout: 10.0)
     }
-    
 }
+
