@@ -11,6 +11,12 @@ import XCTest
 
 class TableView_Download_Image_Tests: XCTestCase {
     
+    func testHasATableView() {
+        let viewController  = ViewController()
+        // Make Confirm for viewController have tableview ..
+        XCTAssertNotNil(viewController.tableView)
+    }
+    
     func testForViewControllerDelegateConfirmation(){
         let viewController  = ViewController()
         
@@ -20,11 +26,24 @@ class TableView_Download_Image_Tests: XCTestCase {
     
     func testForViewControllerDatasourceConfirmation(){
         let viewController  = ViewController()
-        
         // Make Confirm for tableview DataSource..
         XCTAssert(viewController.conforms(to: UITableViewDataSource.self), "ViewController does not confirms TableView datasource")
     }
     
+    func testForTableViewDataSourceProtocol() {
+        let viewController  = ViewController()
+        XCTAssertTrue(viewController.responds(to: #selector(viewController.tableView(_:numberOfRowsInSection:))))
+        XCTAssertTrue(viewController.responds(to: #selector(viewController.tableView(_:cellForRowAt:))))
+    }
+    
+    func testTableViewHeightForRowAtIndexPath (){
+    let viewController  = ViewController()
+    let expectedHeight = UITableViewAutomaticDimension
+    let actualHeight = viewController.tableView.rowHeight
+    
+        XCTAssertEqual(expectedHeight, actualHeight, "Cell should have \(expectedHeight) height, but they have \(actualHeight)");
+    }
+        
     func testForInternetConnection() {
         //Make sure internet coinnection is there ..
         XCTAssert(NetworkServices.isConnectedToInternet(), "No Internet Connection")
@@ -34,25 +53,13 @@ class TableView_Download_Image_Tests: XCTestCase {
         
         // Create an expectation for a background download task.
         let expectation = XCTestExpectation(description: "Download tableview json data")
-        
-        // Create a URL for a web page to be downloaded.
-        let url = URL(string: "https://dl.dropboxusercontent.com/s/2iodh4vg0eortkl/facts.json")!
-        
-        // Create a background task to download the web page.
-        let dataTask = URLSession.shared.dataTask(with: url) { (data, _, _) in
-            
-            // Make sure we downloaded some data.
-            XCTAssertNotNil(data, "No data was downloaded.")
-            
-            // Fulfill the expectation to indicate that the background task has finished successfully.
+        NetworkServices.loadNetworkData {(arrayObjectes,title) in
+            if arrayObjectes.count == 0 && title.isEmpty == true {
+                // Make sure we downloaded some data.
+                XCTAssertNotNil(nil, "No data was downloaded.")
+            }
             expectation.fulfill()
-            
         }
-        // Start the download task.
-        dataTask.resume()
-        
-        // Wait until the expectation is fulfilled, with a timeout of 10 seconds.
         wait(for: [expectation], timeout: 10.0)
     }
 }
-

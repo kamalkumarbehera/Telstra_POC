@@ -46,11 +46,11 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         
         NetworkServices.loadNetworkData { (arrayObjectes,title) in
             weak var weakSelf = self
-            weakSelf.contacts = arrayObjectes
-            weakSelf.tableViewTitle = title
+            weakSelf?.contacts = arrayObjectes
+            weakSelf?.tableViewTitle = title
             DispatchQueue.main.async {
                 
-                weakSelf.tableView.reloadData()
+                weakSelf?.tableView.reloadData()
             }
         }
     }
@@ -61,7 +61,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         self.getAllJsonData()
         DispatchQueue.main.async(execute: { () -> Void in
             
-            weakSelf.tableView.refreshControl?.endRefreshing()
+            weakSelf?.tableView.refreshControl?.endRefreshing()
         })
     }
     
